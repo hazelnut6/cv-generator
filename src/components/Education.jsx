@@ -1,4 +1,5 @@
-import down from '../assets/menu-down.svg'
+import up from '../assets/chevron-up.svg'
+import down from '../assets/chevron-down.svg'
 
 export function Education(props) {
   const { 
@@ -6,6 +7,7 @@ export function Education(props) {
     children, 
     isActive, 
     onShow, 
+    onClose
   } = props; 
 
     
@@ -15,8 +17,14 @@ export function Education(props) {
         <>
           <h3>
             {title}
-            </h3>
-            <p>{children}</p>
+            <img 
+              onClick={onClose}
+              src={up}
+              alt="Close button"
+              style={{width: 35, border: '1px solid black'}}
+            />
+          </h3>
+          <p>{children}</p>
         </>
       ) : (
         <>

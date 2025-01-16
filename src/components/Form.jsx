@@ -38,6 +38,7 @@ export function Form(props) {
         title='General Information' 
         isActive={active === 1}
         onShow={() => setActive(1)}
+        onClose={() => setActive(0)}
         info={info} 
         setInfo={setInfo} 
       >
@@ -82,6 +83,7 @@ export function Form(props) {
         title='Education Background' 
         isActive={active === 2}
         onShow={() => setActive(2)}
+        onClose={() => setActive(0)}
         info={info} 
         setInfo={setInfo} 
       >
@@ -135,6 +137,7 @@ export function Form(props) {
         title='Work Experience' 
         isActive={active === 3}
         onShow={() => setActive(3)}
+        onClose={() => setActive(0)}
         info={info} 
         setInfo={setInfo} 
       >
