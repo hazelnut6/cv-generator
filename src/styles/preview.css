@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.preview {
+    /* width: 40%; */
+    /* height: 90vh; */
+    grid-column: 7/12;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+.general,
+.education,
+.work {
+    width: 100%;
+    padding: 2rem 0;
+    /* border: 1px solid brown; */
+}
+
+.general {
+    text-align: center;
+}
+
+.education {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 30px 80px;
+}
+
+.educLeft,
+.educRight,
+.workLeft,
+.workRight {
+    margin: 10px 0;
+    /* border: 1px solid brown; */
+}
+
+.education h3 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+.educLeft,
+.workLeft {
+    grid-column: 1/2;
+    grid-row: 2/-1;
+}
+
+.educRight,
+.educRight {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+}
+
+.educUniv,
+.workCompany {
+    font-weight: 700;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 30px 130px;
+}
+
+.work h3 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}

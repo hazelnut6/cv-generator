@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.genDiv {
+    width: 100%;
+}
+
+.closeBtn,
+.genOpenBtn {
+    width: 35px;
+}
+
+.closeDiv,
+.genOpenDiv {
+    border: 1px solid brown;
+}
+
+.closeDiv h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.genOpenDiv {
+    display: grid;
+    grid-template-rows: 40px 200px;
+    gap: 10px;
+}
+
+.genOpenDiv h3 {
+    grid-row: 1/1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.children {
+    grid-row: 2/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
