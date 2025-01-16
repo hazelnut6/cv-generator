@@ -33,7 +33,7 @@ export function Form(props) {
   };
 
   return (
-    <form>
+    <form id='form'>
       <General 
         title='General Information' 
         isActive={active === 1}
@@ -198,6 +198,8 @@ export function Form(props) {
             id="description"
             value={info.work.description}
             onChange={handleWorkChange}
+            cols={30}
+            rows={5}
           ></textarea>
         </label><br />
       </Work>
